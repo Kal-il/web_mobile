@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da página</title>
+</head>
+<body>
+    <h1>h1</h1>
+    <h2>H2</h2>
+    <h3>H3</h3>
+    <h4>H4</h4>
+    <h5>H5</h5>
+    <h6>H6</h6>
+    <p>Parágrafo</p>
+    <img src="https://s2-techtudo.glbimg.com/SSAPhiaAy_zLTOu3Tr3ZKu2H5vg=/0x0:1024x609/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2022/c/u/15eppqSmeTdHkoAKM0Uw/dall-e-2.jpg" alt="mona liza" style="height: 200px;">
+    <a href="https://www.google.com" target="_blank">link para google</a>
+    <ol> <!-- ordered list -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ul><!-- Lista não ordenada -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <table>
+        <caption>
+            Tabela
+        </caption>
+        <thead>
+            <tr> <!-- table row -->
+                <th>Coluna 1</th> <!-- table header -->
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+            <tr>
+                <td>Linha 1 - COluna 1</td> <!-- table data -->
+                <td>Linha 2 - Coluna 2</td>
+                <td>Linha 3 - Coluna 3</td>
+            </tr>
+            <tr>
+                <td> Linha 2 - Coluna 1</td>
+                <td> Linha 2 - Coluna 2</td>
+                <td> linha 2 - Coluna 3</td>
+            </tr>
+        </thead>
+    </table>
+
+    <form action="/cadastro/" method="post">
+        Login: <input type="text" name="nome" id="login">
+        Senha: <input type="password" name ="password" id="password">
+        <input type="radio" name="sexo" value="1" checked >Masculino
+        <input type="radio" name="sexo" value="2">Feminino
+
+        <input type="checkbox" name="veiculo1" value="bike">Eu tenho uma bike
+        <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro
+
+        Curso:
+        <select name="Curso">
+            <option value="1">Ciência da computação</option>
+            <option value="2">Direito</option>
+            <option value="3">Engenharia Elétrica</option>
+            <option value="4">Medicina</option>
+        </select>
+
+        mensagem: <textarea name="mensagem" cols="30" rows="10"></textarea>
+        Idade: <input type="number" name="idade" min="10" max="120" step="1" id="idade">
+        Data: <input type="date" name="data" id="data">
+        Autocomplete: <input list="cheeses">
+        data list: <datalist id="cheeses">
+            <option value="Brie">
+            <option value="Gruyere">
+            <option value="Gorgonzola">
+            <option value="Parmesan">
+            <option value="Cheddar">
+            <option value="Mozzarella">
+            <option value="Gouda">
+        
+    
+        <input type="hidden" name="country" value="Brasil">
+
+        <button type="reset" value="limpar">
+        <button type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
