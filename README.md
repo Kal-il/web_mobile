@@ -183,4 +183,99 @@ Especificam detalhes do comportamento do software, demonstrando o que deve acont
 ## Fazer: Diagrama de casos de uso, Diagrama de classes e Prototipagem Gráfica
 
 
+## Anotações feitas pelo Kalil -->
+## Tecnicas e estratégias 
+
+## Testes de Software
+- Objetivam a otimização da gestão de produtos de software **mitigando** o surgimento de *incidentes* em aplicações finais ou durante parte do seu desenvolvimento
+- Testes de unidade ou testes unitários ->  objetivam *aferir* a corretude , em sua *menor fração*: metodos ou funções* individuais de classes, *correspondentes* ou *metodos* do software.
+ - exemplo de teste unitário 
+ ``
+    funciton soma(a, b) {
+        return a + b
+    }
+
+ ``
+ - Um teste unitário para tal funcionalidade busca verificar se o valor de saída para uma determinada entrada é correto
+
+ ``
+ var resultado = soma(1, 2):
+ expect(resultado),to.equal(3);
+ ``
+
+ ### Tipos de teste de software
+ - Testes de integração ->  responsáveis por verificar se os diferentes *produtos* ou *serviços* da aplicação *funcionam* em *harmonia* (ex: testar a integração do banco de dados)
+ - Teste de carga (ou de desempenho): responsáveis por verificar o *comportamento* do sistema sob uma *carga significativa*. Visam garantir a *confiabilidade*, *estabilidade*, e *disponibilidade* 
+
+ anotei so metade dessa página :(
+
+*Test Dirven Development (TDD)* ou em português desenvolvimento orientado a testes é uma tecnica de desenvolvimento de software que baseia em um ciclo curto de repetições (baby steps)
+- Priemiramente o desenvolvedor escreva um caso de teste automatizado que define uma melhoria desejada ou uma nova funcionalidade.
+- Então é produzido código que possa ser validado (aprovado) pelo site
+- Posteriormente o código é refatorado para um código sob padrões estáveis aceitaveis.
+
+### Código sem testes é códgo já quebrado quando foi planejado
+O Django fornece uma API de alto nível para TDD
+Testes são rotinas simples que checam o funcionamento do seu código
+Testes não só identificam problemas, mas também os previnem.
+
+
+Na aplicação final vai ser cobrado  a implementação de testes de API *IMPORTANTE*
+
+
+
+- Use esse comando para rodar os testes unitários :
+``` 
+ ./manage.py test
+```
+
+para o desenvolvimento mobile vai ser usado o framwor ionic usando o angular.
+mas alternativamente pode se usar o react (notas do editor: KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK)
+
+aplicatibo nativo (feito especificamente para um sistema , como android) é melhor em performance pois não tem nada entre a aplicação e o SO,tem acessso direto a uma serie de funcionalidades
+
+Aplicativos híbridos - menor performance, são *parialmente nativos* é como se fossem um web browser rodando no celular, ultiliza HTML, CSS, e JS 
+
+### Node js
+
+sudo npm install -g n
+
+sudo n lts
+
+node -v
+
+sudo npm install -g npm@latest
+
+### Angular js
+
+sudo npm install -g @angular/cli
+
+ng v
+
+### inicializando o projeto mobile
+
+#### Ionic
+
+sudo npm install -g @ionic/cli native-run cordova-res
+
+ionic -v
+
+ionic info
+
+#### Criação da estrutura base do projeto
+
+ionic start sistema-mobile blank --type=angular
+
+ionic serve
+
+ionic cap add android
+
+ionic cap run android
+
+
+
+
+
+
+
 
